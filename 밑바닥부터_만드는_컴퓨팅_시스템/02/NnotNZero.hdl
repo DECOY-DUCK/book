@@ -2,8 +2,7 @@ CHIP  NnotNzero{
     IN a[16],sel,sel2;
     OUT out[16];
 
-    PARTS:
-
+PARTS:
     //nx zx 
     Mux16(a=a, b=false, sel=sel, out=select0orX);
     Not16(in=select0orX, out=notselect0orX);
